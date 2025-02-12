@@ -19,8 +19,8 @@ export default function Home() {
         <div className={styles.headerText}>
           <h1>Brendan Leahey</h1>
           <p>
-            Computer Science and Mathematics @ Brown, Socially Responsible Tech
-            and Interdisciplinary Deep Learning/Computer Vision
+            Computer Science and Mathematics @ Brown, Socially Responsible Deep
+            Learning/Computer Vision
           </p>
         </div>
       </div>
