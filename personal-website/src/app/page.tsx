@@ -24,13 +24,11 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       <nav className={styles.nav}>
         <a href="#about">About</a>
         <a href="#projects">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
-
       <main className={styles.main}>
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
@@ -148,8 +146,18 @@ export default function Home() {
           </p>
         </section>
       </main>
-
-      <footer className={styles.footer}>{/* insert footer content */}</footer>
+      <footer className={styles.footer}>
+        Banner Attribution:{" "}
+        <a href="https://commons.wikimedia.org/wiki/File:Mount_Diablo_banner.jpg">
+          Falcorian
+        </a>
+        ,{" "}
+        <a href="https://creativecommons.org/licenses/by-sa/4.0">
+          CC BY-SA 4.0
+        </a>
+        , via Wikimedia Commons. Last updated:{" "}
+        {new Date("February 12, 2025").toLocaleDateString()}.
+      </footer>
     </div>
   );
 }
