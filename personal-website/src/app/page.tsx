@@ -1,6 +1,6 @@
 // import Image from "next/image";
 import styles from "./page.module.css";
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Home() {
@@ -142,6 +142,16 @@ export default function Home() {
             >
               <FaLinkedin size={20} style={{ marginRight: "8px" }} />
               LinkedIn: Brendan Leahey
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/bpleahey"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={20} style={{ marginRight: "8px" }} />
+              GitHub: bpleahey
             </a>
           </p>
         </section>
