@@ -72,15 +72,33 @@ export default function Home() {
                 width: "250px",
                 height: "250px",
                 position: "relative",
+                alignContent: "center",
+                alignItems: "center",
                 marginLeft: "20px", // Adds space between image and text
               }}
             >
               <Image
-                src="/images/me.jpg"
-                alt="me!"
+                src="/images/monterey_sardines.gif"
+                alt="sardines"
                 fill
                 style={{ borderRadius: "50%", objectFit: "cover" }}
               />
+              <div
+                style={{
+                  width: "225px",
+                  height: "225px",
+                  position: "relative",
+                  marginLeft: "12.5px",
+                }}
+              >
+                <Image
+                  src="/images/me.jpg"
+                  alt="me!"
+                  layout="fill"
+                  objectFit="contain"
+                  style={{ borderRadius: "50%", objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
         </section>
