@@ -46,8 +46,9 @@
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav a {
@@ -59,7 +60,7 @@
 }
 
 .nav a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.15);
   color: var(--background);
 }
 

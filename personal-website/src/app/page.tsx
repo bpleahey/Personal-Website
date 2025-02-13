@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <nav className={styles.nav}>
         <a href="#about">About</a>
-        <a href="#projects">Experience</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
       <main className={styles.main}>
@@ -58,8 +58,8 @@ export default function Home() {
               an application for malnutrition tracking during clinical visits. I
               am continuing to work on clinical applications in a cancer regimen
               browser, called RegiViz, which can be found in{" "}
-              <a href="#projects">
-                <strong>Projects</strong>
+              <a href="#experience">
+                <strong>Experience</strong>
               </a>
               .
               <br />
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className={styles.section}>
+        <section id="experience" className={styles.section}>
           <h2>Experience</h2>
 
           <a href="https://docs.google.com/document/d/1bQV_RVwBCcRxEcCuYC4jNJijqKJs7OhVvv1cActqUiU/edit?usp=sharing">
