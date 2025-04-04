@@ -6,16 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className={styles.page}>
-      {/* Image Banner with Overlayed Text */}
       <div className={styles.bannerContainer}>
-        <Image
-          src="/images/banner.jpg" // Replace with your banner image path
-          alt="Banner Image"
-          layout="responsive"
-          width={1920} // Adjust according to your image size
-          height={600} // Adjust according to your image aspect ratio
-          objectFit="cover"
-        />
         <div className={styles.headerText}>
           <h1>Brendan Leahey</h1>
           <p>
@@ -39,7 +30,7 @@ export default function Home() {
               justifyContent: "space-between",
             }}
           >
-            <p style={{ marginRight: "20px", flex: 1 }}>
+            <p style={{ flex: 1 }}>
               I am a senior at Brown University, studying the combined
               concentration of Mathematics and Computer Science (ScB, pursuing
               honors). My interests include computer vision, computational
@@ -69,34 +60,41 @@ export default function Home() {
             </p>
             <div
               style={{
-                width: "250px",
-                height: "250px",
+                width: "40%",
+                height: "40%",
                 position: "relative",
-                alignContent: "center",
-                alignItems: "center",
-                marginLeft: "20px", // Adds space between image and text
+                marginLeft: "5vw",
+                aspectRatio: "1 / 1", // ensures square shape
+                borderRadius: "50%",
+                overflow: "hidden",
               }}
             >
+              {/* Outer image: Sardines */}
               <Image
                 src="/images/monterey_sardines.gif"
                 alt="sardines"
                 fill
-                style={{ borderRadius: "50%", objectFit: "cover" }}
+                style={{ objectFit: "cover" }}
               />
+
+              {/* Inner image: Profile */}
               <div
                 style={{
-                  width: "225px",
-                  height: "225px",
-                  position: "relative",
-                  marginLeft: "12.5px",
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  width: "85%",
+                  height: "85%",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  overflow: "hidden",
                 }}
               >
                 <Image
                   src="/images/me.jpg"
                   alt="me!"
-                  layout="fill"
-                  objectFit="contain"
-                  style={{ borderRadius: "50%", objectFit: "cover" }}
+                  fill
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </div>
@@ -148,7 +146,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaEnvelope size={20} style={{ marginRight: "8px" }} />
+              <FaEnvelope size={20} style={{ marginRight: ".8vw" }} />
               brendan_leahey@brown.edu
             </a>
           </p>
@@ -158,7 +156,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={20} style={{ marginRight: "8px" }} />
+              <FaLinkedin size={20} style={{ marginRight: ".8vw" }} />
               LinkedIn: Brendan Leahey
             </a>
           </p>
@@ -168,7 +166,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={20} style={{ marginRight: "8px" }} />
+              <FaGithub size={20} style={{ marginRight: ".8vw" }} />
               GitHub: bpleahey
             </a>
           </p>
