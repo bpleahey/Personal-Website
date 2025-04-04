@@ -108,7 +108,7 @@ export default function Home() {
             <strong>Curriculum Vitae </strong>
           </a>
 
-          <ul className="projectList">
+          <ul>
             <li>
               <a href="https://yang2888.github.io/Regimen-demo/">
                 <strong>RegiViz:</strong>{" "}
