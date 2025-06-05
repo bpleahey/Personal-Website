@@ -10,7 +10,7 @@ export default function Home() {
         <div className={styles.headerText}>
           <h1>Brendan Leahey</h1>
           <p>
-            Computer Science and Mathematics @ Brown, Socially Responsible Deep
+            AICD3 @ UCSF, Brown CS Alum, Socially Responsible Deep
             Learning/Computer Vision
           </p>
         </div>
@@ -103,11 +103,28 @@ export default function Home() {
 
         <section id="experience" className={styles.section}>
           <h2>Experience</h2>
-
-          <a href="https://docs.google.com/document/d/1bQV_RVwBCcRxEcCuYC4jNJijqKJs7OhVvv1cActqUiU/edit?usp=sharing">
-            <strong>Curriculum Vitae </strong>
-          </a>
-
+          <br />
+          <h3>
+            <a href="https://docs.google.com/document/d/1bQV_RVwBCcRxEcCuYC4jNJijqKJs7OhVvv1cActqUiU/edit?usp=sharing">
+              <strong>Curriculum Vitae 🔗</strong>
+            </a>
+          </h3>
+          <br />
+          <h3>Education</h3>
+          <strong>Bachelor of Science in Mathematics-Computer Science</strong>
+          Brown University, Providence, RI
+          <br />
+          2021 - 2025
+          <strong>
+            Masters in AI and Computational Drug Discovery and Development
+            (AICD3)
+          </strong>
+          University of California San Francisco
+          <br />
+          Expected 2025 - 2026
+          <br />
+          <br />
+          <h3>Key Projects</h3>
           <ul>
             <li>
               <a href="https://yang2888.github.io/Regimen-demo/">
@@ -119,9 +136,8 @@ export default function Home() {
                 available{" "}
               </a>
               <a href="https://drive.google.com/file/d/1KFsmoZJq4qtSU4UIuxh3igwkvUmT014S/view?usp=sharing">
-                <strong>here</strong>,
+                <strong>here</strong>.
               </a>
-              <a> and we hope to publish soon!</a>
             </li>
             <li>
               <a href="https://cadance-deployment.vercel.app/">
@@ -131,9 +147,28 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <strong>Honors Thesis:</strong> Computationally Mitigating
-              Environmental Noise in Multispectral UAV-Based Object Detection.
-              Results soon!
+              <a href="https://drive.google.com/file/d/149nFAIvZFRVQ295swum8E7VPv2zPeIgZ/view">
+                <strong>Honors Thesis: DANTURES</strong>
+              </a>
+              <br />
+              <a>
+                Abstract: Multispectral object detection has fruitful
+                applications in defense, agriculture, industry, and more. In our
+                series of experiments, Daylight Associated Noise for Training
+                UAV-based multispectral detectors, Robust to Environmental
+                Shifts (or DANTURES, since it is a mouthful), we explore
+                potential improvements of object detection capabilities in
+                unmanned aerial vehicles by embedding determinants of
+                environmental variance into multispectral models. Combining
+                images from forward-looking infrared and visible light (RGB)
+                cameras, we address challenges in object detection accuracy
+                caused by variations in infrared images and visibility
+                challenges in RGB sensing associated with changing times of day.
+                We have implemented a novel adaptation of multispectral YOLO
+                object detection frameworks that integrate RGB, infrared, and
+                time-of-day information to dampen the effect of this noise,
+                aiming to outperform traditional RGB- or IR-only networks.
+              </a>
             </li>
           </ul>
         </section>
