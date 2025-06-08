@@ -35,9 +35,9 @@ export default function Home() {
               Mathematics and Computer Science. I obtained my B.Sc. and
               completed a thesis on improving RGB-infrared object detection
               models to receive departmental honors. My interests include
-              computer vision, computational biology, and deep learning.
-              I was also on the Track and Field/Cross Country teams at Brown,
-              and I have set my sights on triathlon!
+              computer vision, computational biology, and deep learning. I was
+              also on the Track and Field/Cross Country teams at Brown, and I
+              have set my sights on triathlon!
               <br />
               <br />
               This past summer, I volunteered at Lalmba association, developing
@@ -47,17 +47,15 @@ export default function Home() {
               <a href="#experience">
                 <strong>Experience</strong>
               </a>
-              .
               <br />
-              <br />I will be starting my master's at the University of California,
-              San Francisco this summer, joining the AI and Computational Drug
-              Discovery and Development (AICD3) program. Here, I plan to continue
-              exploring computational solutions to healthcare problems in fields
-              like pharmacy and oncology.
+              <br />I will be starting my master&apos;s at the University of
+              California, San Francisco this summer, joining the AI and
+              Computational Drug Discovery and Development (AICD3) program.
+              Here, I plan to continue exploring computational solutions to
+              healthcare problems in fields like pharmacy and oncology.
               <br />
-              <br />
-              I am excited to be back in the Bay Area, and I look forward to contributing
-              to research in an impactful space!
+              <br />I am excited to be back in the Bay Area, and I look forward
+              to contributing to research in an impactful space!
             </p>
             <div
               style={{
