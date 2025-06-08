@@ -176,7 +176,7 @@ export default function Home() {
           <h2>Contact</h2>
           <p>
             <a
-              href="mailto:brendan_leahey@brown.edu"
+              href="mailto:brendan.leahey@ucsf.edu"
               target="_blank"
               rel="noopener noreferrer"
             >
