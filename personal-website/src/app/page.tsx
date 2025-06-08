@@ -31,18 +31,13 @@ export default function Home() {
             }}
           >
             <p style={{ flex: 1 }}>
-              I am a senior at Brown University, studying the combined
-              concentration of Mathematics and Computer Science (ScB, pursuing
-              honors). My interests include computer vision, computational
-              biology, and deep learning. I am also on the Track and Field/Cross
-              Country teams at Brown, and love running and triathlon!
-              <br />
-              <br />
-              Previously, I interned at FLOX robotics in Stockholm. Here, I
-              aided a project involving real-time object detection using deep
-              learning on multiple image modes (RGB and FLIR). I am continuing
-              to explore challenges I encountered within the multimodal learning
-              space through my honors thesis this year.
+              I recently graduated from Brown University, where I studied
+              Mathematics and Computer Science. I obtained my B.Sc. and
+              completed a thesis on improving RGB-infrared object detection
+              models to receive departmental honors. My interests include
+              computer vision, computational biology, and deep learning.
+              I was also on the Track and Field/Cross Country teams at Brown,
+              and I have set my sights on triathlon!
               <br />
               <br />
               This past summer, I volunteered at Lalmba association, developing
@@ -54,9 +49,15 @@ export default function Home() {
               </a>
               .
               <br />
-              <br />I hope to continue impactful research in future employment
-              and graduate studies, leveraging machine learning and software
-              skills to create a positive social impact!
+              <br />I will be starting my master's at the University of California,
+              San Francisco this summer, joining the AI and Computational Drug
+              Discovery and Development (AICD3) program. Here, I plan to continue
+              exploring computational solutions to healthcare problems in fields
+              like pharmacy and oncology.
+              <br />
+              <br />
+              I am excited to be back in the Bay Area, and I look forward to contributing
+              to research in an impactful space!
             </p>
             <div
               style={{
