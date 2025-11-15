@@ -2,24 +2,12 @@
 import styles from "./page.module.css";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import Banner from "@/elements/banner";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <div className={styles.bannerContainer}>
-        <div className={styles.headerText}>
-          <h1>Brendan Leahey</h1>
-          <p>
-            AICD3 @ UCSF, Brown CS Alum, Socially Responsible Deep
-            Learning/Computer Vision
-          </p>
-        </div>
-      </div>
-      <nav className={styles.nav}>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <Banner />
       <main className={styles.main}>
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
