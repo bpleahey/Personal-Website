@@ -85,28 +85,6 @@
   }
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2.5vw;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.nav a {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5vw 1.5vw;
-  transition: all 0.3s ease;
-  border-radius: 5%;
-}
-
-.nav a:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: var(--background);
-}
-
 .main {
   width: 100%;
   max-width: 90%;
