@@ -21,7 +21,6 @@ export default function Banner() {
         <a href="experience">Experience</a>
         <a href="research">Research</a>
         <a href="pokemon">Pokémon</a>
-        <a href="contact">Contact</a>
       </nav>
     </>
   );
