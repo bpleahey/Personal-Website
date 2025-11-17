@@ -1,0 +1,292 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0070f3;
+}
+
+.sectionTitle {
+  font-size: 1.25vw;
+  margin-bottom: 1vw;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1.1em;
+  color: #999;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  margin: 2em 0;
+  padding: 1.5em;
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imageGrid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2px;
+  box-sizing: border-box;
+  background: #2a2a2a;
+  object-fit: cover;
+  object-position: center;
+  clip-path: inset(3% 3% 3% 3%);
+}
+
+.imageGrid img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imageGrid figcaption {
+  grid-column: 1 / -1;
+  font-size: 0.9em;
+  color: #aaa;
+  text-align: right;
+  margin-top: 0.5em;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.imageGridWithSub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin: 2em 0;
+  padding: 1.5em;
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imageGridWithSub:has(.imageWithCaption:nth-child(4)) {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.imageWithCaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.imageWithCaption img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2px;
+  box-sizing: border-box;
+  background: #2a2a2a;
+  object-fit: cover;
+  object-position: center;
+  clip-path: inset(3% 3% 3% 3%);
+}
+
+.imageWithCaption img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.subCaption {
+  font-size: 0.85em;
+  color: #aaa;
+  text-align: center;
+  font-style: italic;
+}
+
+.imageGridWithSub figcaption {
+  grid-column: 1 / -1;
+  font-size: 0.9em;
+  color: #aaa;
+  text-align: right;
+  margin-top: 0.5em;
+  font-style: italic;
+  line-height: 1.4;
+  padding-top: 0.5em;
+  border-top: 1px solid #333;
+}
+
+.architectureDiagram {
+  margin: 2.5em 0;
+  padding: 1.5em;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.architectureDiagram h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: var(--foreground);
+  font-size: 1.1em;
+}
+
+.diagram {
+  width: 100%;
+  height: auto;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.resultsTable {
+  margin: 2.5em 0;
+  overflow-x: auto;
+  padding: 1.5em;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resultsTable h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: var(--foreground);
+  font-size: 1.1em;
+}
+
+.resultsTable table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resultsTable thead {
+  background: #1a1a1a;
+}
+
+.resultsTable th {
+  padding: 0.75em 1em;
+  text-align: left;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 2px solid #444;
+}
+
+.resultsTable td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #444;
+  color: var(--foreground);
+}
+
+.resultsTable tbody tr:hover {
+  background: #333;
+}
+
+.resultsTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.links {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1.5em;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--foreground);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #0070f3;
+  color: white;
+  border-color: #0070f3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageGridWithSub {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageGridWithSub:has(.imageWithCaption:nth-child(4)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+
+  .imageGridWithSub {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+
+  .imageGridWithSub:has(.imageWithCaption:nth-child(4)) {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .links a {
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 0.85em;
+  }
+
+  .imageGrid figcaption,
+  .imageGridWithSub figcaption {
+    text-align: center;
+  }
+
+  .resultsTable {
+    font-size: 0.85em;
+    padding: 1em;
+  }
+
+  .resultsTable th,
+  .resultsTable td {
+    padding: 0.5em;
+  }
+
+  .architectureDiagram {
+    padding: 1em;
+  }
+}
