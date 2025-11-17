@@ -65,13 +65,6 @@ export default function Home() {
               to contributing to meaingful research. I hope to continue research
               with clinical impact in a PhD or in industry after graduating next
               summer!
-              {/* I am a Master's Student in the AI and Computational Drug Discovery and Development (AICD3) Program, where I am building on my background in computer vision and machine learning to explore biomedical applications. I earned my B.Sc. in Mathematics and Computer Science from Brown University, where I completed an honors thesis on improving RGB–infrared object detection models.
-
-I am continuing to apply my experience in computer vision in UCSF's Hong Lab. Applying deep learning frameworks to digital radical prostatectomy whole slide images, we aim to classify adverse histologies and patterns of recurrence to strengthen clinical workflows. The potential for real clinical impact in oncology has been both exciting and motivating.
-
-Through the AICD3 program, I am strengthening my foundation in machine learning and gaining expertise in pharmacy. Recent projects have shown how language models can impact all stages of drug discovery and development. We are currently developing an agent to parse and sort unstructured advent reports to produce FDA-required structured regulatory reports. The Nipah Virus Binder competition presents us with a real-world chance at contributing to de novo protein design to combat a disease with high mortality and pandemic potential. Fitting protein language models into reinforcement learning frameworks, we hope to produce competitive small molecules. I am looking forward to our final quarter, where I will complete a capstone project in collaboration with major pharmacy partners.
-
-I hope to continue research with clinical impact in a PhD or in industry after graduating next summer! */}
             </p>
             <div
               style={{
