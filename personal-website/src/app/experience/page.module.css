@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+
+.sectionText {
+  margin-bottom: 1.2vw;
+  line-height: 1.8;
+}
