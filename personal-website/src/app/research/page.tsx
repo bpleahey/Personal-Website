@@ -20,6 +20,207 @@ export default function Research() {
             to improve prognostication and treatment planning for prostate
             cancer.
           </p>
+
+          {/* TODO: add architecture flow diagram similar to below: whole slide image -> patch feature encoding -> 
+          slide feature encoding -> patient-level fusion -> classification */}
+
+          <svg
+            viewBox="0 0 1000 300"
+            preserveAspectRatio="xMidYMid meet"
+            className={styles.diagram}
+          >
+            <defs>
+              <marker
+                id="arrowhead"
+                markerWidth="10"
+                markerHeight="10"
+                refX="9"
+                refY="3"
+                orient="auto"
+              >
+                <polygon points="0 0, 10 3, 0 6" fill="#666" />
+              </marker>
+            </defs>
+
+            {/* Tabular Clinical Data Input */}
+            <rect
+              x="20"
+              y="10"
+              width="150"
+              height="60"
+              fill="#27AE60"
+              stroke="#196F3D"
+              strokeWidth="2"
+              rx="5"
+            />
+            <text
+              x="95"
+              y="45"
+              textAnchor="middle"
+              fill="white"
+              fontSize="13"
+              fontWeight="bold"
+            >
+              Tabular Clinical Data
+            </text>
+            <line
+              x1="95"
+              y1="70"
+              x2="250"
+              y2="110"
+              stroke="#666"
+              strokeWidth="2"
+              markerEnd="url(#arrowhead)"
+            />
+
+            {/* Whole Slide Image Input */}
+            <rect
+              x="20"
+              y="110"
+              width="150"
+              height="80"
+              fill="#4A90E2"
+              stroke="#2E5C8A"
+              strokeWidth="2"
+              rx="5"
+            />
+            <text
+              x="95"
+              y="155"
+              textAnchor="middle"
+              fill="white"
+              fontSize="14"
+              fontWeight="bold"
+            >
+              WSI
+            </text>
+
+            {/* Patch Feature Encoding */}
+            <rect
+              x="250"
+              y="110"
+              width="150"
+              height="80"
+              fill="#E24A4A"
+              stroke="#8A2E2E"
+              strokeWidth="2"
+              rx="5"
+            />
+            <text
+              x="325"
+              y="155"
+              textAnchor="middle"
+              fill="white"
+              fontSize="14"
+              fontWeight="bold"
+            >
+              Patch Encoding
+            </text>
+
+            {/* Arrow from WSI */}
+            <line
+              x1="170"
+              y1="150"
+              x2="250"
+              y2="150"
+              stroke="#666"
+              strokeWidth="2"
+              markerEnd="url(#arrowhead)"
+            />
+
+            {/* Slide Feature Encoding */}
+            <rect
+              x="450"
+              y="110"
+              width="150"
+              height="80"
+              fill="#9B59B6"
+              stroke="#6C3483"
+              strokeWidth="2"
+              rx="5"
+            />
+            <text
+              x="525"
+              y="155"
+              textAnchor="middle"
+              fill="white"
+              fontSize="14"
+              fontWeight="bold"
+            >
+              Slide Encoding
+            </text>
+            <line
+              x1="400"
+              y1="150"
+              x2="450"
+              y2="150"
+              stroke="#666"
+              strokeWidth="2"
+              markerEnd="url(#arrowhead)"
+            />
+
+            {/* Patient-level Fusion */}
+            <rect
+              x="650"
+              y="110"
+              width="150"
+              height="80"
+              fill="#E67E22"
+              stroke="#A04000"
+              strokeWidth="2"
+              rx="5"
+            />
+            <text
+              x="725"
+              y="155"
+              textAnchor="middle"
+              fill="white"
+              fontSize="14"
+              fontWeight="bold"
+            >
+              Patient-level Fusion
+            </text>
+            <line
+              x1="600"
+              y1="150"
+              x2="650"
+              y2="150"
+              stroke="#666"
+              strokeWidth="2"
+              markerEnd="url(#arrowhead)"
+            />
+
+            {/* Classification Output */}
+            <rect
+              x="850"
+              y="110"
+              width="150"
+              height="80"
+              fill="#3498DB"
+              stroke="#1F618D"
+              strokeWidth="2"
+              rx="5"
+            />
+            <text
+              x="925"
+              y="155"
+              textAnchor="middle"
+              fill="white"
+              fontSize="14"
+              fontWeight="bold"
+            >
+              Classification Output
+            </text>
+            <line
+              x1="800"
+              y1="150"
+              x2="850"
+              y2="150"
+              stroke="#666"
+              strokeWidth="2"
+              markerEnd="url(#arrowhead)"
+            />
+          </svg>
         </section>
         <section>
           <a

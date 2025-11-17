@@ -290,3 +290,15 @@
     padding: 1em;
   }
 }
+.diagramWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.diagram {
+  width: 100%;
+  height: auto;
+  max-width: 1000px; /* Optional: limit total width */
+  display: block;
+  margin: 0 auto;
+}
