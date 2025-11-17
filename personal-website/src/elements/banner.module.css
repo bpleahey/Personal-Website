@@ -1,0 +1,108 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerContainer {
+  background-image: url("/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 25vh; /* Ensure it’s at least 25% of the viewport height */
+  height: auto; /* Let it adjust based on content */
+  padding: 1rem; /* Add some padding to ensure space around content */
+}
+
+.headerText {
+  position: relative; /* Make sure it is positioned normally */
+  text-align: center;
+  color: white;
+  padding: 0 1rem; /* Prevent text from touching the edges */
+  max-width: 90%; /* Allow it to resize responsively */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header h1 {
+  font-size: clamp(
+    2rem,
+    5vw,
+    4rem
+  ); /* Ensures that the font size is not too large */
+  font-weight: bold;
+  margin: 0;
+}
+
+.header p {
+  font-size: clamp(1rem, 2.5vw, 2rem); /* Ensures text is responsive */
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
+  .header p {
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: clamp(1.2rem, 7vw, 2rem); /* Further adjust for small screens */
+  }
+
+  .header p {
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
+  .header p {
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5vw 1.5vw;
+  transition: all 0.3s ease;
+  border-radius: 5%;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: var(--background);
+}

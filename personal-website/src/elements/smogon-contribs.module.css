@@ -1,0 +1,61 @@
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.contributionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+}
+
+.contributionsTable th,
+.contributionsTable td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+}
+
+.contributionsTable img {
+  object-fit: contain;
+  object-position: center center;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+.sortable:hover {
+  background-color: #f3f4f6;
+}
+
+.pokemonLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pokemonLink:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 1rem;
+}
+
+.githubLink {
+  color: #3b82f6;
+}
+
+.githubLink:hover {
+  text-decoration: underline;
+}
