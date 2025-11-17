@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Banner />
-      <main className={styles.main}>
+      <main>
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
           <div
@@ -20,7 +20,7 @@ export default function Home() {
           >
             <p style={{ flex: 1 }}>
               I am a Master&apos;s student in the AI and Computational Drug
-              Discovery and Development (AIC3) Program, where I am building on
+              Discovery and Development (AICD3) Program, where I am building on
               my background in computer vision and machine learning to explore
               biomedical and pharmaceutical applications. I recently earned my
               B.Sc. in Mathematics and Computer Science from Brown University,
@@ -28,7 +28,9 @@ export default function Home() {
               object detection models. My interests include computer vision,
               computational biology, health informatics, and deep learning. I
               also ran Track and Field/Cross Country at Brown, and I joined the
-              triathlon club here at UCSF, which I hope to compete in soon!
+              triathlon club here at UCSF, which I hope to compete in soon! In
+              my spare time, I enjoy cooking and playing Pokemon Showdown, which
+              I've highlighted on here in a fun visualization project.
               <br />
               <br />
               I recently graduated from Brown University, where I studied
@@ -152,7 +154,7 @@ export default function Home() {
           CC BY-SA 4.0
         </a>
         , via Wikimedia Commons. Last updated:{" "}
-        {new Date("February 12, 2025").toLocaleDateString()}.
+        {new Date("November 16, 2025").toLocaleDateString()}.
       </footer>
     </div>
   );

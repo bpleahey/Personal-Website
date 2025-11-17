@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import contributionsData from "../data/contributions.json";
+import styles from "./smogon-contribs.module.css";
 
 export default function SmogonContribs({}: {}) {
-  const { username, totalContributions, fetchedAt, contributions } =
+  const { username, totalContributions, fetchedAt, contributions, userId } =
     contributionsData;
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -15,7 +16,7 @@ export default function SmogonContribs({}: {}) {
 
   const creditTypeMap: Record<string, string> = {
     "Written by": "Author",
-    "Quality checked by": "QC",
+    "Quality checked by": "Quality Control",
   };
 
   const formattedDate = new Date(fetchedAt).toLocaleDateString("en-US", {
@@ -42,8 +43,14 @@ export default function SmogonContribs({}: {}) {
     .sort((a, b) => {
       if (!sortConfig) return 0;
       const { key, direction } = sortConfig;
-      const aValue = key === "creditType" ? creditTypeMap[a[key]] : a[key];
-      const bValue = key === "creditType" ? creditTypeMap[b[key]] : b[key];
+      const aValue =
+        key === "creditType"
+          ? creditTypeMap[a[key as keyof typeof a]]
+          : a[key as keyof typeof a];
+      const bValue =
+        key === "creditType"
+          ? creditTypeMap[b[key as keyof typeof b]]
+          : b[key as keyof typeof b];
       return (
         (aValue < bValue ? -1 : aValue > bValue ? 1 : 0) *
         (direction === "asc" ? 1 : -1)
@@ -54,9 +61,15 @@ export default function SmogonContribs({}: {}) {
     <div>
       <h2>Smogon Contributions</h2>
 
-      <div className="flex justify-between items-center mb-4">
+      <div className={styles.headerInfo}>
         <span>
-          {totalContributions} contributions by user <b>{username}</b>
+          {totalContributions} contributions by user{" "}
+          <a
+            href={`https://www.smogon.com/forums/members/${username}.${userId}/`}
+            className={styles.pokemonLink}
+          >
+            <strong>{username}</strong>
+          </a>
         </span>
         <span>Last updated on {formattedDate}</span>
       </div>
@@ -66,37 +79,43 @@ export default function SmogonContribs({}: {}) {
         placeholder="Search Pokémon, format, or generation..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="mb-4 w-full p-2 border border-gray-300 rounded"
+        className={styles.searchInput}
       />
 
-      <table className="table-auto w-full border-collapse border border-gray-300 text-sm">
+      <table className={styles.contributionsTable}>
         <thead>
           <tr>
-            <th className="border border-gray-300 px-2 py-1">Image</th>
+            <th>Image</th>
             <th
-              className="border border-gray-300 px-2 py-1 cursor-pointer"
+              className={styles.sortable}
               onClick={() => handleSort("pokemon")}
             >
-              Pokémon
+              Pokémon{" "}
+              {sortConfig?.key === "pokemon" &&
+                (sortConfig.direction === "asc" ? "↑" : "↓")}
             </th>
             <th
-              className="border border-gray-300 px-2 py-1 cursor-pointer"
+              className={styles.sortable}
               onClick={() => handleSort("format")}
             >
-              Format
+              Format{" "}
+              {sortConfig?.key === "format" &&
+                (sortConfig.direction === "asc" ? "↑" : "↓")}
             </th>
             <th
-              className="border border-gray-300 px-2 py-1 cursor-pointer"
+              className={styles.sortable}
               onClick={() => handleSort("creditType")}
             >
-              Contribution Type
+              Contribution Type{" "}
+              {sortConfig?.key === "creditType" &&
+                (sortConfig.direction === "asc" ? "↑" : "↓")}
             </th>
           </tr>
         </thead>
         <tbody>
           {sortedAndFilteredContributions.map((c) => (
             <tr key={c.id}>
-              <td className="border border-gray-300 px-2 py-1">
+              <td>
                 <img
                   src={`https://play.pokemonshowdown.com/sprites/ani/${c.pokemon.toLowerCase()}.gif`}
                   alt={c.pokemon}
@@ -104,33 +123,32 @@ export default function SmogonContribs({}: {}) {
                   height={48}
                 />
               </td>
-              <td className="border border-gray-300 px-2 py-1">
+              <td>
                 <a
                   href={c.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
+                  className={styles.pokemonLink}
                 >
                   {c.pokemon}
+                  {c.setNumber > 0 ? ` (${c.setNumber + 1})` : ""}
                 </a>
               </td>
-              <td className="border border-gray-300 px-2 py-1">
+              <td>
                 {c.generation.toUpperCase()} {c.format}
               </td>
-              <td className="border border-gray-300 px-2 py-1">
-                {creditTypeMap[c.creditType] ?? c.creditType}
-              </td>
+              <td>{creditTypeMap[c.creditType] ?? c.creditType}</td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      <div className="mt-4">
+      <div className={styles.footer}>
         <a
           href={"https://github.com/bpleahey/smogon-contrib-visualizer"}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
+          className={styles.githubLink}
         >
           View source on GitHub
         </a>

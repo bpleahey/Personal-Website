@@ -5,27 +5,22 @@ export default function CV() {
   return (
     <div className={styles.page}>
       <Banner />
-      <>
+      <main>
         experience: flox images, ucsf program project images, brown project
         images, TA project with students
-        <section id="experience" className={styles.section}>
-          <h2>Experience</h2>
-          <br />
-          <h3>
-            <a href="https://docs.google.com/document/d/1bQV_RVwBCcRxEcCuYC4jNJijqKJs7OhVvv1cActqUiU/edit?usp=sharing">
-              <strong>Curriculum Vitae 🔗</strong>
-            </a>
-          </h3>
-          <br />
-          <h3>Education</h3>
-          <strong>Bachelor of Science in Mathematics-Computer Science</strong>
+        <section>
+          <h2>Education</h2>
+          <h3>Bachelor of Science in Mathematics-Computer Science</h3>
           Brown University, Providence, RI
           <br />
           2021 - 2025
-          <strong>
+          <br />
+          Computer Science Department Honors
+          <br />
+          <h3>
             Masters in AI and Computational Drug Discovery and Development
             (AICD3)
-          </strong>
+          </h3>
           University of California San Francisco
           <br />
           Expected 2025 - 2026
@@ -53,33 +48,12 @@ export default function CV() {
                 Spotify API is rate limited.
               </a>
             </li>
-            <li>
-              <a href="https://drive.google.com/file/d/149nFAIvZFRVQ295swum8E7VPv2zPeIgZ/view">
-                <strong>Honors Thesis: DANTURES</strong>
-              </a>
-              <br />
-              <a>
-                Abstract: Multispectral object detection has fruitful
-                applications in defense, agriculture, industry, and more. In our
-                series of experiments, Daylight Associated Noise for Training
-                UAV-based multispectral detectors, Robust to Environmental
-                Shifts (or DANTURES, since it is a mouthful), we explore
-                potential improvements of object detection capabilities in
-                unmanned aerial vehicles by embedding determinants of
-                environmental variance into multispectral models. Combining
-                images from forward-looking infrared and visible light (RGB)
-                cameras, we address challenges in object detection accuracy
-                caused by variations in infrared images and visibility
-                challenges in RGB sensing associated with changing times of day.
-                We have implemented a novel adaptation of multispectral YOLO
-                object detection frameworks that integrate RGB, infrared, and
-                time-of-day information to dampen the effect of this noise,
-                aiming to outperform traditional RGB- or IR-only networks.
-              </a>
-            </li>
           </ul>
         </section>
-      </>
+        <section>
+          <h2>Work Experience</h2>
+        </section>
+      </main>
     </div>
   );
 }

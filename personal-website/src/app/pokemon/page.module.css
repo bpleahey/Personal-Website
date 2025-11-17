@@ -3,3 +3,22 @@
   flex-direction: column;
   align-items: center;
 }
+.tournamentTable th,
+.tournamentTable td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+}
+
+.tournamentTable img {
+  object-fit: contain;
+  object-position: center center;
+}
+.pokemonLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pokemonLink:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}

@@ -10,7 +10,7 @@ export default function Banner() {
         <div className={styles.headerText}>
           <h1>Brendan Leahey</h1>
           <p>
-            AICD3 @ UCSF, Brown CS Alum, Socially Responsible Deep
+            UCSF AICD3, Brown CS Alum, Socially Responsible Deep
             Learning/Computer Vision
           </p>
         </div>
