@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 export default function Research() {
   return (
     <div className={styles.page}>
+      {/* TODO: Make better diagrams, increase size of captions */}
       <Banner />
       <main>
         <section>

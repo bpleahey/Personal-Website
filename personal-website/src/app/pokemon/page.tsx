@@ -2,6 +2,9 @@ import Banner from "@/elements/banner";
 import styles from "./page.module.css";
 import SmogonContribs from "@/elements/smogon-contribs";
 
+// TODO: recolor top row of table, make github link a button like other pages
+// Add HGPL win? think of any managing but probably it
+
 export default function Research() {
   return (
     <div className={styles.page}>
