@@ -1,4 +1,5 @@
 import styles from "./banner.module.css";
+import Link from "next/link";
 
 // Create a banner component that can be reused across multiple pages
 
@@ -16,11 +17,21 @@ export default function Banner() {
         </div>
       </div>
       <nav className={styles.nav}>
-        <a href="/">Home</a>
-        <a href="cv">CV</a>
-        <a href="experience">Experience</a>
-        <a href="research">Research</a>
-        <a href="pokemon">Pokémon</a>
+        <Link className={styles.navlink} href="/">
+          Home
+        </Link>
+        <Link className={styles.navlink} href="cv">
+          CV
+        </Link>
+        <Link className={styles.navlink} href="experience">
+          Experience
+        </Link>
+        <Link className={styles.navlink} href="research">
+          Research
+        </Link>
+        <Link className={styles.navlink} href="pokemon">
+          Pokémon
+        </Link>
       </nav>
     </>
   );

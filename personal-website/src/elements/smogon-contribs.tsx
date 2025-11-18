@@ -4,7 +4,7 @@ import { useState } from "react";
 import contributionsData from "../data/contributions.json";
 import styles from "./smogon-contribs.module.css";
 
-export default function SmogonContribs({}: {}) {
+export default function SmogonContribs() {
   const { username, totalContributions, fetchedAt, contributions, userId } =
     contributionsData;
 

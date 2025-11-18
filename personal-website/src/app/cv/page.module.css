@@ -18,7 +18,3 @@
 .iframe:hover {
   transform: translateY(-0.5vw); /* match section hover behavior */
 }
-
-body {
-  margin: 0%;
-}

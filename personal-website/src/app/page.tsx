@@ -30,7 +30,7 @@ export default function Home() {
               also ran Track and Field/Cross Country at Brown, and I joined the
               triathlon club here at UCSF, which I hope to compete in soon! In
               my spare time, I enjoy cooking and playing Pokemon Showdown, which
-              I've highlighted on here in a fun visualization project.
+              I have highlighted on here in a fun visualization project.
               <br />
               <br />
               I recently graduated from Brown University, where I studied
@@ -42,8 +42,9 @@ export default function Home() {
               have set my sights on triathlon!
               <br />
               <br />I am continuing to apply my experience in computer vision in
-              UCSF's Hong Lab. We are working to apply deep learning pipelines
-              to digital pathology images. More details can be found in
+              UCSF&apos;s Hong Lab. We are working to apply deep learning
+              pipelines to digital pathology images. More details can be found
+              in
               {" Research"}
               <a href="Research"></a>. The potential for real clinical impact in
               oncology has been both exciting and motivating.
