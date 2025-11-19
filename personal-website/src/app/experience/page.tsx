@@ -63,7 +63,10 @@ export default function CV() {
               <p>
                 <strong>Agentic Pharmacovigilance</strong>: ...
               </p>
-              <p> add diagram from slides</p>
+              <figure>
+                <img src="images/experience/agenticpv.png"></img>
+                <img src="images/experience/nonagenticpv.png"></img>
+              </figure>
             </li>
           </ul>
         </section>
@@ -71,11 +74,19 @@ export default function CV() {
           <h2>Work Experience</h2>
           <h3></h3>
           <h3>Graduate Student Researcher</h3>
-          do i have pictures of hong lab? maybe with jerry brown?
+          <img src="images/experience/lab.jpg"></img>
           <h3>Undergraduate Teaching Assistant</h3>
-          image/video of TA Work
+          <img src="images/experience/TAing.jpg"></img>
           <h3>Detection (Artificial Intelligence) Intern</h3>
-          add goose detection photo
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/uG7myL0HPHM?si=lEM2r9hc-b6G89pf&amp;controls=0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </section>
       </main>
     </div>
