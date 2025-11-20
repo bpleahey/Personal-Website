@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Banner from "@/elements/banner";
 
 export default function Experience() {
-  // TODO: remove unneccesary a elements, highlight more brown projects
+  // TODO: highlight more brown projects
   return (
     <div className={styles.page}>
       <Banner />
@@ -13,8 +13,35 @@ export default function Experience() {
           <p>
             <strong>Brown University, Providence, RI </strong>2021 - 2025
             <br></br>
-            Computer Science Department Honors
+            Computer Science Department Honors, Divison 1 Track and Field/Cross
+            Country Athlete
           </p>
+          <figure className={`${styles.imageGridWithSub} ${styles.twoColumns}`}>
+            <div className={styles.imageWithCaption}>
+              <img
+                src="images/experience/arnoldgrad.jpg"
+                alt="House photo feat. merlin"
+                width="30%"
+              />
+              <p className={styles.subCaption}>House Grads + Merlin</p>
+            </div>
+
+            <div className={styles.imageWithCaption}>
+              <div>
+                <img
+                  src="images/experience/running.jpg"
+                  alt="Running action shot"
+                />
+                <img
+                  src="images/experience/xcclass.JPEG"
+                  alt="2025 Brown Men's Cross Country"
+                />
+                <p className={styles.subCaption}>
+                  Brown Cross Country / Track and Field
+                </p>
+              </div>
+            </div>
+          </figure>
           <h4>Projects</h4>
           <ul>
             <li>
@@ -24,12 +51,13 @@ export default function Experience() {
                   Visualizing Cancer Regimens
                 </a>
                 <br></br>
-                For a master's course, CSCI 2370: Interdisciplinary Scientific
-                Visualization, we presented a tool to generate cancer regimen
-                visualization and analysis leveraging large language models. We
-                completed this project in collaboration with Dr. Jeremy Warner,
-                Dr. Sanjay Mishra, and Dr. Sandeep Jain of Brown's Warren Alpert
-                Medical School. A preliminary course paper is available{" "}
+                For a master&apos;s course, CSCI 2370: Interdisciplinary
+                Scientific Visualization, we presented a tool to generate cancer
+                regimen visualization and analysis leveraging large language
+                models. We completed this project in collaboration with Dr.
+                Jeremy Warner, Dr. Sanjay Mishra, and Dr. Sandeep Jain of
+                Brown&apos;s Warren Alpert Medical School. A preliminary course
+                paper is available{" "}
                 <a href="https://drive.google.com/file/d/1KFsmoZJq4qtSU4UIuxh3igwkvUmT014S/view?usp=sharing">
                   <strong> here</strong>.
                 </a>
@@ -80,12 +108,12 @@ export default function Experience() {
                 </div>
 
                 <figcaption>
-                  <strong>Figure:</strong> Comparison of our tool's performance
-                  relative to a ChemoExperts baseline. Top row shows comparison
-                  of time to generate a regimen visualization with clinically
-                  relevant 5 and 10 minute thresholds to represent average time
-                  to treat a patient. Results showed clear improvement in our
-                  method over competitors.
+                  <strong>Figure:</strong> Comparison of our tool&apos;s
+                  performance relative to a ChemoExperts baseline. Top row shows
+                  comparison of time to generate a regimen visualization with
+                  clinically relevant 5 and 10 minute thresholds to represent
+                  average time to treat a patient. Results showed clear
+                  improvement in our method over competitors.
                 </figcaption>
               </figure>
             </li>
@@ -254,7 +282,7 @@ export default function Experience() {
             </div>
 
             <figcaption>
-              <strong>Figure:</strong> Teaching CSCI1430 Computer Vision at
+              <strong>Figure:</strong> Teaching CSCI1430: Computer Vision at
               Brown University, mentoring students on projects including this
               violent content detection system.
             </figcaption>

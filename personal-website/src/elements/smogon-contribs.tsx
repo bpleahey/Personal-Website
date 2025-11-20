@@ -83,7 +83,7 @@ export default function SmogonContribs() {
       />
 
       <table className={styles.contributionsTable}>
-        <thead>
+        <thead className={styles.tableHead}>
           <tr>
             <th>Image</th>
             <th
@@ -144,14 +144,16 @@ export default function SmogonContribs() {
       </table>
 
       <div className={styles.footer}>
-        <a
-          href={"https://github.com/bpleahey/smogon-contrib-visualizer"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.githubLink}
-        >
-          View source on GitHub
-        </a>
+        <div className={styles.links}>
+          <a
+            href={"https://github.com/bpleahey/smogon-contrib-visualizer"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.githubLink}
+          >
+            View source on GitHub
+          </a>
+        </div>
       </div>
     </div>
   );

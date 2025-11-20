@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Banner from "@/elements/banner";
+// TODO: make wider?
 
 export default function CV() {
   return (

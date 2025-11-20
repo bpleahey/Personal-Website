@@ -59,3 +59,29 @@
 .githubLink:hover {
   text-decoration: underline;
 }
+
+.links {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1.5em;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--foreground);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #0070f3;
+  color: white;
+  border-color: #0070f3;
+}
+
+.contributionsTable thead {
+  background-color: RGBA(243, 244, 246, 0.5);
+}

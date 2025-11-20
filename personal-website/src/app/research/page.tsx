@@ -2,9 +2,9 @@ import Banner from "@/elements/banner";
 import styles from "./page.module.css";
 
 export default function Research() {
+  // TODO: Make better diagrams
   return (
     <div className={styles.page}>
-      {/* TODO: Make better diagrams, increase size of captions */}
       <Banner />
       <main>
         <section>

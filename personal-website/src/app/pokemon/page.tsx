@@ -2,9 +2,6 @@ import Banner from "@/elements/banner";
 import styles from "./page.module.css";
 import SmogonContribs from "@/elements/smogon-contribs";
 
-// TODO: recolor top row of table, make github link a button like other pages
-// Add HGPL win? think of any managing but probably it
-
 export default function Research() {
   return (
     <div className={styles.page}>
@@ -213,6 +210,30 @@ export default function Research() {
                 <td>
                   <a
                     href="https://www.smogon.com/forums/threads/lcsl-iv-finals-won-by-babyboyswablus.3767535/#post-10622252"
+                    className={styles.pokemonLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Thread
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Euphonos Legacy League</td>
+                <td>
+                  <a
+                    href="https://www.smogon.com/forums/members/the-hisui-region.567777/"
+                    className={styles.pokemonLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    The Hisui Region
+                  </a>
+                </td>
+                <td>General Lunala</td>
+                <td>
+                  <a
+                    href="https://www.smogon.com/forums/threads/euphonos-legacy-league-finals-won-by-general-lunala.3763535/"
                     className={styles.pokemonLink}
                     target="_blank"
                     rel="noopener noreferrer"
