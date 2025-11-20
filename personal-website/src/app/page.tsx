@@ -146,7 +146,7 @@ export default function Home() {
           CC BY-SA 4.0
         </a>
         , via Wikimedia Commons. Last updated:{" "}
-        {new Date("November 16, 2025").toLocaleDateString()}.
+        {new Date("November 20, 2025").toLocaleDateString()}.
       </footer>
     </div>
   );
