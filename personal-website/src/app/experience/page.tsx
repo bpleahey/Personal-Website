@@ -267,7 +267,7 @@ export default function Experience() {
           be seen below!
           <figure className={`${styles.imageGridWithSub} ${styles.twoColumns}`}>
             <div className={styles.imageWithCaption}>
-              <img src="images/experience/TAing.jpg" alt="Group photo!" />
+              <img src="images/experience/TAing.JPG" alt="Group photo!" />
               <p className={styles.subCaption}>Group Photo!</p>
             </div>
 
