@@ -9,7 +9,7 @@ export default function Research() {
       <main>
         <section>
           <a href="https://honglab.ucsf.edu/" className={styles.link}>
-            <strong className={styles.sectionTitle}>Hong Lab</strong>
+            <strong>Hong Lab</strong>
           </a>
           <p>
             The Hong lab is a radiation oncology lab with a focus on machine
@@ -233,9 +233,7 @@ export default function Research() {
             href="https://drive.google.com/file/d/149nFAIvZFRVQ295swum8E7VPv2zPeIgZ/view"
             className={styles.link}
           >
-            <strong className={styles.sectionTitle}>
-              Honors Thesis: DANTURES
-            </strong>
+            <strong>Honors Thesis: DANTURES</strong>
           </a>
           <span className={styles.subtitle}>
             Daylight Associated Noise for Training UAV-based Multispectral
