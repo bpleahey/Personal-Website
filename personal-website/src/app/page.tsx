@@ -32,15 +32,6 @@ export default function Home() {
               my spare time, I enjoy cooking and playing Pokemon Showdown, which
               I have highlighted on here in a fun visualization project.
               <br />
-              <br />
-              I recently graduated from Brown University, where I studied
-              Mathematics and Computer Science. I obtained my B.Sc. and
-              completed a thesis on improving RGB-infrared object detection
-              models to receive departmental honors. My interests include
-              computer vision, computational biology, and deep learning. I was
-              also on the Track and Field/Cross Country teams at Brown, and I
-              have set my sights on triathlon!
-              <br />
               <br />I am continuing to apply my experience in computer vision in
               UCSF&apos;s Hong Lab. We are working to apply deep learning
               pipelines to digital pathology images. More details can be found

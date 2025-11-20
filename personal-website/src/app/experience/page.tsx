@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Banner from "@/elements/banner";
 
 export default function Experience() {
-  // TODO: highlight more brown projects
+  // TODO: highlight more brown projects, remove cutoff around edge of image for these ones
   return (
     <div className={styles.page}>
       <Banner />
