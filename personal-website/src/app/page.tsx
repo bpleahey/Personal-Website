@@ -42,9 +42,9 @@ export default function Home() {
               <br />
               <br />
               Through the AICD3 program, I am strengthening my foundation in
-              machine learning and gaining expertise in pharmacy. Recent
-              projects have shown how language models can impact all stages of
-              drug discovery and development. For more details, see
+              machine learning and gaining expertise in pharmaceutical science.
+              Recent projects have shown how language models can impact all
+              stages of drug discovery and development. For more details, see
               <a href="experience">
                 <strong> Experience</strong>
               </a>{" "}
