@@ -1,5 +1,6 @@
 import styles from "./banner.module.css";
 import Link from "next/link";
+import { GoHome } from "react-icons/go";
 
 // Create a banner component that can be reused across multiple pages
 
@@ -18,7 +19,7 @@ export default function Banner() {
       </div>
       <nav className={styles.nav}>
         <Link className={styles.navlink} href="/">
-          Home
+          <GoHome></GoHome>
         </Link>
         <Link className={styles.navlink} href="cv">
           CV
