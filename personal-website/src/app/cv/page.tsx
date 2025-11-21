@@ -18,8 +18,6 @@ export default function CV() {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  console.log("Current isMobile state:", isMobile);
-
   const docUrl = isMobile
     ? "https://docs.google.com/document/d/e/2PACX-1vQZPuN6_rqySVdxqdsfBG3fq1GklewMdjhNTxoZlFoDImp0zFLc3ZMHdFuwbHKFWuinPHhgVq3qHa8X/pub?embedded=true"
     : "https://docs.google.com/document/d/e/2PACX-1vQdhy-LlszJqunjd575dVnx9QIwRpxPpmckDfXevVY6zWBvaJHg-2rfnz1AHyri4rrF3l_OBYhmlav4/pub?embedded=true";
