@@ -97,7 +97,7 @@
 .navlink {
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.5vw 1.5vw;
+  padding: 0.5vw 1vw;
   transition: all 0.3s ease;
   border-radius: 5%;
 }
@@ -105,4 +105,9 @@
 .navlink:hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: var(--background);
+}
+
+.navlink:hover img {
+  transform: scale(1.2);
+  filter: brightness(0.7);
 }

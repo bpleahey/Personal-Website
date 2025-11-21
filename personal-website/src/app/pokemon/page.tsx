@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import SmogonContribs from "@/elements/smogon-contribs";
 
 export default function Research() {
+  //TODO:fix table sizing for tournament tables and smogon contribution tables
   return (
     <div className={styles.page}>
       <Banner />

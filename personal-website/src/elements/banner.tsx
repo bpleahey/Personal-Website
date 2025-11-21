@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // Create a banner component that can be reused across multiple pages
 
-// TODO: add a little emoji to the pokemon link
+// TODO: add a little emoji to the pokemon link, make fit on mobile view width
 export default function Banner() {
   return (
     <>
@@ -30,7 +30,11 @@ export default function Banner() {
           Research
         </Link>
         <Link className={styles.navlink} href="pokemon">
-          Pokémon
+          <img
+            className={styles.kabuto}
+            width="16px"
+            src="images/kabuto.png"
+          ></img>
         </Link>
       </nav>
     </>
