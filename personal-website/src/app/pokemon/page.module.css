@@ -2,17 +2,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
+
+.tournamentTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: table;
+}
+
 .tournamentTable th,
 .tournamentTable td {
   border: 1px solid #d1d5db;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.tournamentTable th {
+  background-color: RGBA(243, 244, 246, 0.5);
+  font-weight: 600;
 }
 
 .tournamentTable img {
+  max-width: 60px;
+  height: auto;
   object-fit: contain;
   object-position: center center;
 }
+
 .pokemonLink {
   color: inherit;
   text-decoration: none;
@@ -21,4 +39,67 @@
 .pokemonLink:hover {
   color: #3b82f6;
   text-decoration: underline;
+}
+
+/* Responsive design for tablets and smaller */
+@media screen and (max-width: 768px) {
+  .tournamentTable {
+    font-size: 0.875rem;
+  }
+
+  .tournamentTable th,
+  .tournamentTable td {
+    padding: 0.5rem;
+  }
+
+  .tournamentTable img {
+    max-width: 40px;
+  }
+}
+
+/* Card-based layout for mobile screens */
+@media screen and (max-width: 640px) {
+  .tournamentTable,
+  .tournamentTable thead,
+  .tournamentTable tbody,
+  .tournamentTable th,
+  .tournamentTable td,
+  .tournamentTable tr {
+    display: block;
+  }
+
+  .tournamentTable thead {
+    display: none;
+  }
+
+  .tournamentTable tr {
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    background-color: RGBA(243, 244, 246, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .tournamentTable td {
+    border: none;
+    padding: 0.5rem 0;
+    text-align: left;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .tournamentTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-right: 0.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .tournamentTable img {
+    max-width: 50px;
+  }
 }
