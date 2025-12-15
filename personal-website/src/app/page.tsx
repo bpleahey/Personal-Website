@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Banner from "@/elements/banner";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-
+// TODO: fix zoomin on all pages
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -28,9 +28,9 @@ export default function Home() {
               object detection models. My interests include computer vision,
               computational biology, health informatics, and deep learning. I
               also ran Track and Field/Cross Country at Brown, and I joined the
-              triathlon club here at UCSF, which I hope to compete in soon! In
-              my spare time, I enjoy cooking and playing Pokemon Showdown, which
-              I have highlighted on here in a fun visualization project.
+              triathlon club here at UCSF, and I hope to compete soon! In my
+              spare time, I enjoy cooking and playing Pokemon Showdown, which I
+              have highlighted on here in a fun visualization project.
               <br />
               <br />I am continuing to apply my experience in computer vision in
               UCSF&apos;s Hong Lab. We are working to apply deep learning

@@ -2,7 +2,8 @@ import Banner from "@/elements/banner";
 import styles from "./page.module.css";
 
 export default function Research() {
-  // TODO: Make better diagrams
+  // TODO: Make better diagrams, fix light mode issue on tables/text, search bar text too
+  // Make table not change size when sorting (unless that is desired)
   return (
     <div className={styles.page}>
       <Banner />
@@ -15,7 +16,7 @@ export default function Research() {
             The Hong lab is a radiation oncology lab with a focus on machine
             learning and individualized clinical care. I am leading computer
             vision efforts within the Hong Lab. My current research focuses on
-            applying deep learning frameworks to H&E stained, post-radial
+            applying deep learning frameworks to H&E stained, post-radical
             prostatectomy whole slide images and tabular clinical data. We hope
             to classify patterns of recurrence and Gleason grade four subtypes
             to improve prognostication and treatment planning for prostate

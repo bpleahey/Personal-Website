@@ -3,6 +3,9 @@ import Banner from "@/elements/banner";
 
 export default function Experience() {
   // TODO: highlight more brown projects, remove cutoff around edge of image for these ones
+  // make linkedin frame taller to include full image, improve image quality
+  // make links redirect externally rather than open within tab
+  // make images smaller
   return (
     <div className={styles.page}>
       <Banner />
