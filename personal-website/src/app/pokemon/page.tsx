@@ -111,6 +111,26 @@ export default function Research() {
                 </td>
               </tr>
               <tr>
+                <td data-label="Tournament">UMPL V</td>
+                <td data-label="Format">Gen 8 NFE</td>
+                <td data-label="Team Name">Mane Remover</td>
+                <td data-label="Custom Avatar Prize">
+                  <img
+                    src="https://cdn.simplystamps.com/media/catalog/product/1/6/16499-coming-soon-banner-craft-stamp-hcb.png"
+                    alt="Coming soon..."
+                    className={styles.avatarImage}
+                  />
+                </td>
+                <td data-label="Link">
+                  <ExternalLink
+                    href="https://www.smogon.com/forums/threads/umpl-v-finals-won-by-mane-remover.3774007/"
+                    className={styles.pokemonLink}
+                  >
+                    View Thread
+                  </ExternalLink>
+                </td>
+              </tr>
+              <tr>
                 <td data-label="Tournament">SSPL III</td>
                 <td data-label="Format">Gen 8 Little Cup</td>
                 <td data-label="Team Name">Lele Sserafim</td>

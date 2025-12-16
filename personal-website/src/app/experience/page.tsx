@@ -5,8 +5,7 @@ import Banner from "@/elements/banner";
 export default function Experience() {
   // TODO: highlight more brown projects
   // improve image quality
-  // make links redirect externally rather than open within tab
-  // make images smaller
+  // make images smaller (fit section on one page?)
   return (
     <div className={styles.page}>
       <Banner />
