@@ -1,5 +1,6 @@
 import Banner from "@/elements/banner";
 import styles from "./page.module.css";
+import ExternalLink from "@/elements/ExternalLink";
 
 export default function Research() {
   // TODO: Make better diagrams, fix light mode issue on tables/text, search bar text too
@@ -9,9 +10,9 @@ export default function Research() {
       <Banner />
       <main>
         <section>
-          <a href="https://honglab.ucsf.edu/" className={styles.link}>
+          <ExternalLink href="https://honglab.ucsf.edu/" className={styles.link}>
             <strong>Hong Lab</strong>
-          </a>
+          </ExternalLink>
           <p>
             The Hong lab is a radiation oncology lab with a focus on machine
             learning and individualized clinical care. I am leading computer
@@ -230,12 +231,12 @@ export default function Research() {
           </figure>
         </section>
         <section>
-          <a
+          <ExternalLink
             href="https://drive.google.com/file/d/149nFAIvZFRVQ295swum8E7VPv2zPeIgZ/view"
             className={styles.link}
           >
             <strong>Honors Thesis: DANTURES</strong>
-          </a>
+          </ExternalLink>
           <span className={styles.subtitle}>
             Daylight Associated Noise for Training UAV-based Multispectral
             Detectors, Robust to Environmental Shifts
@@ -770,10 +771,10 @@ export default function Research() {
           </p>
 
           <div className={styles.links}>
-            <a href="https://github.com/bpleahey/dantures">GitHub Repository</a>
-            <a href="https://drive.google.com/file/d/149nFAIvZFRVQ295swum8E7VPv2zPeIgZ/view">
+            <ExternalLink href="https://github.com/bpleahey/dantures">GitHub Repository</ExternalLink>
+            <ExternalLink href="https://drive.google.com/file/d/149nFAIvZFRVQ295swum8E7VPv2zPeIgZ/view">
               Full Thesis (PDF)
-            </a>
+            </ExternalLink>
           </div>
         </section>
       </main>

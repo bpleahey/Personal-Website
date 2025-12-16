@@ -33,13 +33,14 @@
 .comparisonItem img {
   width: 100%;
   height: auto;
+  max-height: 66vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0.125rem;
   box-sizing: border-box;
   background: #2a2a2a;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -121,13 +122,14 @@
   width: 100%;
   max-width: 50rem;
   height: auto;
+  max-height: 66vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0.125rem;
   box-sizing: border-box;
   background: #2a2a2a;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   margin: 0 auto;
 }
@@ -168,15 +170,15 @@
 .imageGrid img {
   width: 100%;
   height: auto;
+  max-height: 66vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0.125rem;
   box-sizing: border-box;
   background: #2a2a2a;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  clip-path: inset(3% 3% 3% 3%);
 }
 
 .imageGrid img:hover {
@@ -225,18 +227,38 @@
   gap: 0.5em;
 }
 
-.imageWithCaption img {
+.arnoldgrad img {
   width: 100%;
   height: auto;
+  max-height: 60vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0.125rem;
   box-sizing: border-box;
   background: #2a2a2a;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  clip-path: inset(3% 3% 3% 3%);
+}
+
+.arnoldgrad img:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+
+.imageWithCaption img {
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.125rem;
+  box-sizing: border-box;
+  background: #2a2a2a;
+  object-fit: contain;
+  object-position: center;
 }
 
 .imageWithCaption img:hover {
@@ -279,7 +301,7 @@
 
 .page iframe[title="Embedded post"] {
   aspect-ratio: auto;
-  height: 400px;
+  height: 500px;
   max-width: 35rem;
 }
 

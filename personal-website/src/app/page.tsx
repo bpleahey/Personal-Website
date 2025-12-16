@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Banner from "@/elements/banner";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import ExternalLink from "@/elements/ExternalLink";
 // TODO: fix zoomin on all pages
 export default function Home() {
   return (
@@ -105,46 +106,40 @@ export default function Home() {
         <section className={styles.section}>
           <h2>Contact</h2>
           <p>
-            <a
+            <ExternalLink
               href="mailto:brendan.leahey@ucsf.edu"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FaEnvelope size={20} style={{ marginRight: ".8vw" }} />
               brendan.leahey@ucsf.edu
-            </a>
+            </ExternalLink>
           </p>
           <p>
-            <a
+            <ExternalLink
               href="https://www.linkedin.com/in/brendan-leahey/"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FaLinkedin size={20} style={{ marginRight: ".8vw" }} />
               LinkedIn: Brendan Leahey
-            </a>
+            </ExternalLink>
           </p>
           <p>
-            <a
+            <ExternalLink
               href="https://github.com/bpleahey"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FaGithub size={20} style={{ marginRight: ".8vw" }} />
               GitHub: bpleahey
-            </a>
+            </ExternalLink>
           </p>
         </section>
       </main>
       <footer className={styles.footer}>
         Banner Attribution:{" "}
-        <a href="https://commons.wikimedia.org/wiki/File:Mount_Diablo_banner.jpg">
+        <ExternalLink href="https://commons.wikimedia.org/wiki/File:Mount_Diablo_banner.jpg">
           Falcorian
-        </a>
+        </ExternalLink>
         ,{" "}
-        <a href="https://creativecommons.org/licenses/by-sa/4.0">
+        <ExternalLink href="https://creativecommons.org/licenses/by-sa/4.0">
           CC BY-SA 4.0
-        </a>
+        </ExternalLink>
         , via Wikimedia Commons. Last updated:{" "}
         {new Date("November 20, 2025").toLocaleDateString()}.
       </footer>
