@@ -1,8 +1,11 @@
+import ExternalLink from "@/elements/ExternalLink";
 import styles from "./page.module.css";
 import Banner from "@/elements/banner";
 
 export default function Experience() {
-  // TODO: highlight more brown projects, remove cutoff around edge of image for these ones
+  // TODO: highlight more brown projects
+  // improve image quality
+  // make images smaller (fit section on one page?)
   return (
     <div className={styles.page}>
       <Banner />
@@ -17,11 +20,10 @@ export default function Experience() {
             Country Athlete
           </p>
           <figure className={`${styles.imageGridWithSub} ${styles.twoColumns}`}>
-            <div className={styles.imageWithCaption}>
+            <div className={styles.arnoldgrad}>
               <img
                 src="images/experience/arnoldgrad.jpg"
                 alt="House photo feat. merlin"
-                width="30%"
               />
               <p className={styles.subCaption}>House Grads + Merlin</p>
             </div>
@@ -46,10 +48,10 @@ export default function Experience() {
           <ul>
             <li>
               <p>
-                <a href="https://yang2888.github.io/Regimen-demo/">
+                <ExternalLink href="https://yang2888.github.io/Regimen-demo/">
                   <strong>RegiViz:</strong> A Tool for Generating and
                   Visualizing Cancer Regimens
-                </a>
+                </ExternalLink>
                 <br></br>
                 For a master&apos;s course, CSCI 2370: Interdisciplinary
                 Scientific Visualization, we presented a tool to generate cancer
@@ -58,21 +60,10 @@ export default function Experience() {
                 Jeremy Warner, Dr. Sanjay Mishra, and Dr. Sandeep Jain of
                 Brown&apos;s Warren Alpert Medical School. A preliminary course
                 paper is available{" "}
-                <a href="https://drive.google.com/file/d/1KFsmoZJq4qtSU4UIuxh3igwkvUmT014S/view?usp=sharing">
+                <ExternalLink href="https://drive.google.com/file/d/1KFsmoZJq4qtSU4UIuxh3igwkvUmT014S/view?usp=sharing">
                   <strong> here</strong>.
-                </a>
+                </ExternalLink>
               </p>
-              <figure className={styles.singleImageFigure}>
-                <img
-                  src="images/experience/regiviz/regiviz.png"
-                  alt="RegiViz visualization interface"
-                />
-                <figcaption>
-                  Project visualization UI found on our demo website. Future
-                  plans include solid cancer factor visualization and a more
-                  traditional calendar demonstration.
-                </figcaption>
-              </figure>
               <figure className={styles.imageGridWithSub}>
                 <div className={styles.imageWithCaption}>
                   <img
@@ -119,9 +110,9 @@ export default function Experience() {
             </li>
             <li>
               <p>
-                <a href="https://cadance-deployment.vercel.app/">
+                <ExternalLink href="https://cadance-deployment.vercel.app/">
                   <strong>CaDance: </strong>
-                </a>
+                </ExternalLink>
                 create your own running playlists tailored to your cadence and
                 perceived effort! Contact me to be added to our permitted users
                 list, as the Spotify API is rate limited. I also generated a
@@ -151,18 +142,29 @@ export default function Experience() {
             <strong>University of California San Francisco </strong>
             Expected 2025 - 2026
           </p>
+          <figure className={`${styles.imageGridWithSub} ${styles.twoColumns}`}>
+            <div className={styles.imageWithCaption}>
+              <iframe
+              src="https://www.linkedin.com/embed/feed/update/urn:li:share:7369113921938472962?collapsed=1"
+              title="Embedded post"
+              ></iframe>
+            </div>
 
-          <iframe
-            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7369113921938472962?collapsed=1"
-            title="Embedded post"
-          ></iframe>
+            <div className={styles.imageWithCaption}>
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7406445454499962880"
+                title="Embedded post">
+              </iframe>
+            </div>
+          </figure>
+
           <h4>Projects</h4>
           <ul>
             <li>
               <strong>
-                <a href="https://proteinbase.com/competitions/adaptyv-nipah-competition">
+                <ExternalLink href="https://proteinbase.com/competitions/adaptyv-nipah-competition">
                   Nipah Binder Competition
-                </a>
+                </ExternalLink>
               </strong>
               <br />
               The Nipah virus emerged recently and has exhibited high mortality

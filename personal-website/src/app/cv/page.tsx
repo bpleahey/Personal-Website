@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Banner from "@/elements/banner";
 
+//TODO: make google doc content loaded in as a pdf?
+
 export default function CV() {
   const [isMobile, setIsMobile] = useState(false);
 
